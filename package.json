@@ -1,0 +1,32 @@
+{
+  "name": "ng2-quick",
+  "description": "Quick starter package for Angular 2 samples",
+  "version": "0.1.0",
+  "repository": {
+      "type": "git",
+      "url": "https://github.com/awerlang/angular2-quick.git"
+  },
+  "scripts": {
+    "postinstall": "typings install",
+    "tsc": "tsc --outDir dist",
+    "tsc:w": "tsc -w --outDir dist",
+    "lite": "lite-server",
+    "start": "concurrent \"npm run tsc:w\" \"npm run lite\" "
+  },
+  "license": "MIT",
+  "dependencies": {
+    "angular2": "2.0.0-beta.8",
+    "systemjs": "0.19.22",
+    "es6-promise": "^3.0.2",
+    "es6-shim": "^0.33.3",
+    "reflect-metadata": "0.1.2",
+    "rxjs": "5.0.0-beta.2",
+    "zone.js": "0.5.15"
+  },
+  "devDependencies": {
+    "concurrently": "^1.0.0",
+    "lite-server": "^2.0.1",
+    "typescript": "^1.8.7",
+    "typings": "^0.6.8"
+  }
+}
